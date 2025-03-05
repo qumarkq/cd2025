@@ -8,18 +8,6 @@ typedef struct node {
     struct node *next;
 } Node;
 
-int search(char ch, Node *head) {
-    Node *current = head;
-    while (current != NULL) {
-        if (current->ch == ch) {
-            (current -> count) += 1;
-            return 1;
-        }
-        current = current->next;
-    }
-    return 0;
-}
-
 int main(int argc, char *argv[1]) {
     FILE *fp = fopen("main.c", "r");
     if (fp == NULL) {
