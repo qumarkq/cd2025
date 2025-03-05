@@ -27,7 +27,7 @@ int main(int argc, char *argv[1]) {
     }
 
     //hash 
-    Node *hash[127] = {NULL};
+    Node *hash[128] = {NULL};
     char tmp;
     Node *head = NULL;
     Node *current = head;
