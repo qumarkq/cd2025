@@ -59,5 +59,13 @@ int main(int argc, char *argv[1]) {
         printf("%c : %d\n", head->ch, head->count);
         head = head->next;
     }
+
+    //free node
+    Node *free_head = head;
+    while (free_head != NULL) {
+        free(free_head);
+        free_head = free_head->next;
+    }
+
     return 0;
 }
