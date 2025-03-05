@@ -56,7 +56,7 @@ int main(int argc, char *argv[1]) {
 
     //print node
     while (head != NULL) {
-        printf("%c: %d\n", head->ch, head->count);
+        printf("%c : %d\n", head->ch, head->count);
         head = head->next;
     }
     return 0;
